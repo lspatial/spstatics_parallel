@@ -1,0 +1,71 @@
+#!/bin/bash
+workspace=/gpfs/higis/apps/hpgc_geostatistic
+echo "geostatistic workspace is:" $workspace 
+cd $workspace/Bshade/Debug
+echo $pwd
+make clean
+make
+cd $workspace/GeoPreprocessing/Debug
+echo $pwd
+make clean
+make
+cd $workspace/HASM/Debug
+echo $pwd
+make clean
+make
+cd $workspace/IDW/Debug
+echo $pwd
+make clean
+make
+cd $workspace/Kriging/Debug
+echo $pwd
+make clean
+make
+cd $workspace/MovingAverage/Debug
+echo $pwd
+make clean
+make
+cd $workspace/Msn/Debug
+echo $pwd
+make clean
+make
+cd $workspace/ParBayes/cxcore/Debug
+echo $pwd
+make clean
+make
+cd $workspace/ParBayes/ParBayes/Debug
+echo $pwd
+make clean
+make
+cp ParBayes ParBayes_HillClimb
+cp ParBayes ParBayes_EM
+cp ParBayes ParBayes_Naive
+cp ParBayes ParBayes_Gibbs
+cd $workspace/Popu/Debug
+echo $pwd
+make clean
+make
+cd $workspace/Sandwich/Debug
+echo $pwd
+make clean
+make
+cd $workspace/Semivariogram/Debug
+echo $pwd
+make clean
+make
+cd $workspace/SpatialCorrelation/Debug
+echo $pwd
+make clean
+make
+cd $workspace/SpatialWeightMatrix/Debug
+echo $pwd
+make clean
+make
+cd $workspace/Srs/Debug
+echo $pwd
+make clean
+make
+cd $workspace/TIN/Debug
+echo $pwd
+make clean
+make

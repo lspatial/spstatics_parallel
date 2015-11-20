@@ -1,0 +1,5 @@
+sel,e,-a
+input,e,-p
+band,e,-c
+output,e,-o
+mem

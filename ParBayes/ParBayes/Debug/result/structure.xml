@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+
+<PNLObjects version="1.1">
+<MyBayesModel TypeName="BNet" NumberOfFactors="15">
+<Graph TypeName="Graph" SavingType="ByEdges" NumberOfNodes="15">
+0:13_(p) 7_(c) 3_(p) 1_(c) 
+1:14_(c) 13_(p) 0_(p) 
+2:13_(c) 12_(c) 8_(c) 4_(c) 
+3:5_(p) 4_(p) 0_(c) 
+4:13_(p) 3_(c) 2_(p) 
+5:13_(p) 11_(c) 8_(p) 3_(c) 
+6:13_(p) 11_(p) 
+7:14_(c) 13_(p) 10_(c) 0_(p) 
+8:13_(p) 5_(c) 2_(p) 
+9:13_(p) 12_(p) 
+10:13_(p) 7_(p) 
+11:12_(p) 6_(c) 5_(p) 
+12:13_(c) 11_(c) 9_(c) 2_(p) 
+13:12_(p) 10_(c) 9_(c) 8_(c) 7_(c) 6_(c) 5_(c) 4_(c) 2_(p) 1_(c) 0_(c) 
+14:7_(p) 1_(p) 
+</Graph>
+<ModelDomain TypeName="ModelDomain">
+<VarAssociations TypeName="intVector">
+[0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 ]</VarAssociations>
+<NodeTypes TypeName="NodeTypeVector" NumberOfNodes="15">
+1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2,1:2:1</NodeTypes>
+</ModelDomain>
+<Factor0 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[3 13 0 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.064921 0.935079 0.275108 0.724892 0.529337 0.470663 0.711010 0.288990 ]</MatTable>
+</DistributionFunction>
+</Factor0>
+<Factor1 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[0 13 1 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.689391 0.310609 0.576862 0.423138 0.890973 0.109027 0.797309 0.202691 ]</MatTable>
+</DistributionFunction>
+</Factor1>
+<Factor2 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[2 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="1" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="1">
+1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="1" Ranges="[2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.535282 0.464718 ]</MatTable>
+</DistributionFunction>
+</Factor2>
+<Factor3 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[4 5 3 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.292596 0.707404 0.622283 0.377717 0.536916 0.463084 0.535509 0.464491 ]</MatTable>
+</DistributionFunction>
+</Factor3>
+<Factor4 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[2 13 4 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.882345 0.117655 0.809233 0.190767 0.469344 0.530656 0.250254 0.749746 ]</MatTable>
+</DistributionFunction>
+</Factor4>
+<Factor5 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[8 13 5 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.429251 0.570749 0.494508 0.505492 0.316169 0.683831 0.633053 0.366947 ]</MatTable>
+</DistributionFunction>
+</Factor5>
+<Factor6 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[11 13 6 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.722310 0.277690 0.276587 0.723413 0.990097 0.009903 0.472894 0.527106 ]</MatTable>
+</DistributionFunction>
+</Factor6>
+<Factor7 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[0 13 7 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.444253 0.555747 0.377805 0.622195 0.554802 0.445198 0.448988 0.551012 ]</MatTable>
+</DistributionFunction>
+</Factor7>
+<Factor8 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[2 13 8 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.259931 0.740069 0.694310 0.305690 0.328263 0.671737 0.816530 0.183470 ]</MatTable>
+</DistributionFunction>
+</Factor8>
+<Factor9 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[12 13 9 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.096543 0.903457 0.411154 0.588846 0.183626 0.816374 0.719939 0.280061 ]</MatTable>
+</DistributionFunction>
+</Factor9>
+<Factor10 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[7 13 10 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.573728 0.426272 0.679857 0.320143 0.467346 0.532654 0.728874 0.271126 ]</MatTable>
+</DistributionFunction>
+</Factor10>
+<Factor11 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[5 12 11 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.087246 0.912754 0.295588 0.704412 0.347861 0.652139 0.407283 0.592717 ]</MatTable>
+</DistributionFunction>
+</Factor11>
+<Factor12 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[2 12 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="2" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="2">
+1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="2" Ranges="[2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.193652 0.806348 0.663465 0.336535 ]</MatTable>
+</DistributionFunction>
+</Factor12>
+<Factor13 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[2 12 13 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.968120 0.031880 0.409280 0.590720 0.518748 0.481252 0.105858 0.894142 ]</MatTable>
+</DistributionFunction>
+</Factor13>
+<Factor14 TypeName="Factor" FactorType="1" DistributionType="0">
+<ModelDomain TypeName="ModelDomain" DuplicatedObject="@MyBayesModel/ModelDomain">
+</ModelDomain>
+<Domain TypeName="intVector">
+[1 7 14 ]</Domain>
+<DistributionFunction TypeName="TabularDistribFun" NumberOfNodes="3" IsUnitFunction="0">
+<NodeTypes TypeName="PNodeTypeVector" NumberOfNodes="3">
+1:2,1:2,1:2:1</NodeTypes>
+<MatTable TypeName="MatrixOfFloat" NumberOfDimensions="3" Ranges="[2 2 2 ]" MatrixClass="NumericDense" IsClamped="0">
+[0.410235 0.589765 0.124094 0.875906 0.680809 0.319191 0.116253 0.883747 ]</MatTable>
+</DistributionFunction>
+</Factor14>
+</MyBayesModel>
+
+</PNLObjects>

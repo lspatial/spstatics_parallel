@@ -1,0 +1,10 @@
+SpatialWeightedMatrix <input file> <id field index> <output file> <exponent> <distance type> <standarized>
+
+inputfile：矢量数据（shapefile）
+id field index：唯一标识字段（id字段）的序号
+outputfile：输出文件
+distance type：距离类型，0表示欧几里德距离，1表示曼哈顿距离
+exponent：距离指数参数，0表示欧几里德距离，1表示欧几里德距离的平方
+standarized：是否标准化（归一化），0表示false，1表示true
+
+mpic++ *.h *.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o swm

@@ -1,0 +1,31 @@
+1. 参数列表：
+	[input file]：输入文件，shapefile
+	[output file]：输出文件，geotiff
+	[field index]：输入文件中，值所在的字段编号，整型
+	[cellsize]：栅格文件的格子尺寸，双精度
+	[number of nearest points]：使用最近的n个点进行计算，忽略更远的点，整型
+	[nugget]：块金值，双精度 
+	[height of arc]：拱高，拱高+块金值=基台值，双精度
+	[range]：变程，双精度
+2. 调用样例
+	mpirun -np 1 ./kriging ./ca_pm10_pts.shp ./output.tiff 4 1000 32 2 20 100000
+
+	其中：减小cellsize，增加点的数量，增大输入数据的规模都能显著延长程序的执行时间
+
+3. 编译所依赖的库
+
+	* GDAL, OGR
+	* Openmpi
+	* ANN (在lib目录里，需要重新编译：直接执行"make linux-g++"）
+
+4. 实验数据
+
+	加州的111个站点pm10的监测值，来自于ArcGIS的sample data。其中，pm值是第五个字段
+
+5. 变差函数使用的是球状模型
+
+			c,											h=0
+	r(h) =  c + cc * ( 3/2 * h/a - 1/2 * (h/a)^3)		0<h<=a
+			c + cc										h>a
+
+	其中，c是块金值，cc是拱高，a是变程，h是变差，r(h)是半变异函数

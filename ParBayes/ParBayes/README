@@ -1,0 +1,11 @@
+参数及意义
+mpirun -np 2 ParBayes -pl /data/workspace/ParBayes/ParBayes/Debug/data/vector/gps_people_s.shp -C 17 -pi /data/workspace/ParBayes/ParBayes/Debug/data/vector/gps_people_m.shp
+ 
+ -p 表示输入文件路径
+ -c 表示需要计算的列，从0开始；栅格数据则表示波段
+ -C 矢量文件表示决策属性所在列，栅格文件表示分类文件在-pl参数中的顺序
+
+mpirun -np 1 ParBayes -pl dem_s_5m_dis.tif,plan_s_5m_dis.tif,prof_s_5m_dis.tif,slope_s_5m_dis.tif,wet_s_5m_dis.tif,class_5m.tif -C 5 -pi dem_s_5m_dis.tif,plan_s_5m_dis.tif,prof_s_5m_dis.tif,slope_s_5m_dis.tif,wet_s_5m_dis.tif -o class.tif
+
+
+mpirun -np 1 ParBayes -pl dem_s_5m_dis_Resample.tif,plan_s_5m_dis_Resample.tif,prof_s_5m_dis_Resample.tif,slope_s_5m_dis_Resample.tif,wet_s_5m_dis_Resample.tif,class_5m_Resample.tif -C 5 -pi dem_s_5m_dis_Resample.tif,plan_s_5m_dis_Resample.tif,prof_s_5m_dis_Resample.tif,slope_s_5m_dis_Resample.tif,wet_s_5m_dis_Resample.tif

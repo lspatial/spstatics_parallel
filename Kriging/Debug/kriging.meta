@@ -1,0 +1,14 @@
+hostname
+port
+dbname
+user
+password
+inputlayer
+outputfile
+fieldindex
+cellsize
+numberOfPoints
+nugget
+heightOfArc
+range
+mem

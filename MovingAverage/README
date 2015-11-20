@@ -1,0 +1,10 @@
+﻿
+（1）编译命令：mpic++ IDW.h IDW.cpp IDWMain.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o MovingAverage
+（2）执行命令：mpirun -np 10 -machinefile ./machinefile ./IDW sc_p_3w.shp  re.tif 1000 3 20 20
+  说明：sc_p_3w.shp 是散点文件
+        re.tif是结果文件
+        1000是结果分辨率
+        3是需要插值的列
+        20 20是插值函数的参数
+
+

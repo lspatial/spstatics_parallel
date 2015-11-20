@@ -1,0 +1,9 @@
+﻿说明：是在秦老师的小集群上运行的
+（1）编译命令：mpic++ GouTIN.h GouTIN.cpp TINMain.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o TIN
+（2）执行命令：mpirun -np 10 ./out bai1train.shp result.txt
+  说明：4000_1.txt 是散点文件
+        result.txt是结果文件
+
+
+
+

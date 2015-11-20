@@ -1,0 +1,12 @@
+sel,e,-a
+input,e,-pl
+field,e,-c
+dec,e,-C
+inputstr,e,-is
+output,e,-ops
+dbname,e,-dbname
+hostname,e,-hostname
+username,e,-username
+pwd,e,-pwd
+port,e,-port
+mem

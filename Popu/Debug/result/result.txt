@@ -1,0 +1,28 @@
+    ----- Result of spatial scan statistic method -----
+
+Number of locations .........: 496
+Total population ............: 19749351
+Total number of cases .......: 3451
+Incidence /100000 ...........: 17.47
+
+Density index for Grid ......: 0.1
+Maximum Cluster Size ........: 30 percent of population
+Monte Carlo times ...........: 9999
+
+Total number of candidata clusters ....: 301147
+Maximum Cluster include ...............: 163 locations 
+
+  --- Detected most likely cluster ---
+Location IDs included .....: 
+37030217-37030216-37030210-37030411-37030215-37030213-37030212-37030211-37030214-37030412-37030410-
+Population ................: 236941
+Number of cases ...........: 97
+Expected cases ............: 41.4
+Incidence /100000 .........: 40.94
+Observed / expected .......: 2.34
+
+Relative Risk .............: 2.38166
+
+Monte Carlo rank ..........: 1/10000
+P-value ...................: 0.0001
+

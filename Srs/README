@@ -1,0 +1,6 @@
+//command
+mpic++ *.h *.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o Srs
+
+mpiexec –n p SRS test.shp
+其中，n是进程数；sample.shp为样本点，样本值字段名为value。
+

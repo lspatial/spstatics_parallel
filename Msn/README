@@ -1,0 +1,12 @@
+mpic++ -DUSE_MPI *.h *.cpp -L/soft/share/lib -L/data/wangy/lis/lib -I/data/wangy/lis/include -I/soft/share/include -lgdal -llis -o Msn
+
+mpiexec -n p MSN configure.txt
+配置文件（configure.txt）：
+第一行：样本文件类型（0：文本文件；1：shapefile）；
+第二行：分层数；
+第三行：各层权重；
+第四行：样本文件；
+第五行：离散总体文件；
+第六行：半变异参数文件。
+其中，半变异参数文件为文本文件，第一行为全局半变异参数，之后每行分别为各层的半变异参数。
+

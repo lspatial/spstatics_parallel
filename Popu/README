@@ -1,0 +1,19 @@
+﻿五套数据为山东省5块不同大小位置区域内的乡镇点shape文件，包含的点对象个数分别为316、496、618、744和851。
+
+mpirun  -np 5  Popu  popu_case.shp  result.txt  0.2  0.3  9999
+
+参数按顺序依次为
+
+[input file]：输入文件，矢量shp文件
+
+[output file]：输出文件，文本文件
+
+[Density index for Grid]：格网密度的上限 一般 0.1-0.2
+
+[Maximum Cluster Size]：单个候选聚集区域度量值的最大可能比例 一般 0.2-0.4
+
+[Monte Carlo  times]：蒙特卡洛模拟次数 一般 9999 - 49999
+
+
+//command
+mpic++ spa_mpi_gdal.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o Popu

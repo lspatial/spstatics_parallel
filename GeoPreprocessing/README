@@ -1,0 +1,15 @@
+参数及意义
+mpirun -np 4 ./GeoPreprocessing -a 2 -co 0 -k 0 -p /data/workspace/GeoPreprocessing/data/input/sc_p.shp -c 0,1,2,3,4,5,6,7,8,9,10,11,12 -C 14  -o /data/workspace/GeoPreprocessing/data/result/sc_p_dis.shp
+ 
+-a 0表示log算法，1表示normal算法，2表示离散化算法
+
+-p 表示输入文件路径
+-o 表示输入文件路径
+-c 表示需要计算的列，从0开始；栅格数据则表示波段
+
+-co 表示是否输出离散话完成后的分类信息，0表示不输出，1表示输出，默认为0
+-k 表示是否使用k-mean聚类对断点进行筛选，0表示不使用，1表示使用，默认为0
+-C 表示离散化算法中决策属性所在的列
+
+ mpirun -np 2 GeoPreprocessing -a 1 -p /home/wangyang/workspace/GeoPreprocessing/Data/gps_people_s.shp
+ -c 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17  -o /home/wangyang/workspace/GeoPreprocessing/Result/re_dis_s.shp

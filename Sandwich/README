@@ -1,0 +1,3 @@
+mpic++  *.cpp -L/soft/share/lib -I/soft/share/include -lgdal -o Sandwich
+
+mpirun -np 1 -machinefile /data/wangy/test/bin/machinefile1 Sandwich /data/wangy/test/data/sandwich_data/JilinCounty/samples.csv /data/wangy/test/data/sandwich_data/JilinCounty/zonation.csv /data/wangy/test/data/sandwich_data/JilinCounty/repCounty.csv

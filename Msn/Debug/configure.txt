@@ -1,0 +1,6 @@
+1
+3
+0.12 0.50 0.38
+/gpfs/higis/apps/hpgc_geostatistic/Data/Msn/samples2830.shp
+/gpfs/higis/apps/hpgc_geostatistic/Data/Msn/blk35669.shp
+/gpfs/higis/apps/hpgc_geostatistic/Data/Msn/SvModels_BSHADE.txt
